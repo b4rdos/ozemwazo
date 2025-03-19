@@ -5,4 +5,19 @@ edition = "2021"
 
 [dependencies]
 console_error_panic_hook = "0.1.7"
-leptos = { version = "0.7.4", features = ["csr"] }
+console_log = "1.0.0"
+leptos = { version = "0.7.7", features = ["csr"] }
+leptos_meta = "0.7.7"
+leptos_router = "0.7.7"
+log = "0.4.26"
+
+[dev-dependencies]
+wasm-bindgen = "0.2.100"
+wasm-bindgen-test = "0.3.50"
+web-sys = "0.3.77"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
