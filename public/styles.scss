@@ -3,7 +3,7 @@
 @import "https://unpkg.com/open-props";
 
 /* -- Optional imports that use the props -- */
-@import "https://unpkg.com/open-props/normalze.min.css";
+@import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
 
 
@@ -38,5 +38,11 @@ button {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Part 1 Changes */
+.red {
+  color: var(--red-5);
 }
