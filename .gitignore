@@ -24,3 +24,10 @@ Cargo.lock
 
 /target
 /dist
+
+# Node
+node_modules/
+package-lock.json
+
+# tailwind output
+public/tailwind-output.css

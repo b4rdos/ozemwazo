@@ -8,6 +8,7 @@ fn App() -> impl IntoView {
         <button
             on:click=move |_| *set_count.write() += 1
             class:red=move || count.get() % 2 == 1
+            class="rounded-xl bg-blue-500"
         >
             <strong>"Click Me: "</strong>
             {count}
